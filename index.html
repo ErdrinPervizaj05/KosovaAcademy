@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta & Page Settings -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KosovaAcademy</title>
+
+    <!-- Fonts & Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ===== NAVIGATION BAR ===== -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="#" class="logo">KosovaAcademy</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Search Bar -->
+        <form class="search-form" onsubmit="return false;">
+            <input type="text" placeholder="Search courses..." aria-label="Search courses" />
+            <button type="submit" aria-label="Search">&#128269;</button>
+        </form>
+
+        <!-- Auth Buttons -->
+        <div class="nav-right">
+            <a class="auth-btn" href="#">Log In</a>
+            <a class="auth-btn register" href="#">Register</a>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SLIDER / SLIDESHOW SECTION ===== -->
+    <section class="hero-slider">
+        <div class="slider-overlay"></div>
+
+        <!-- Slide Images -->
+        <img class="hero-slide active"
+            src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=80"
+            alt="Learning Image 1" />
+        <img class="hero-slide"
+            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1400&q=80"
+            alt="Learning Image 2" />
+        <img class="hero-slide"
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80"
+            alt="Learning Image 3" />
+
+        <!-- Slide Captions -->
+        <div class="hero-caption active">
+            <h1>Welcome to KosovaAcademy</h1>
+            <p>Learn new skills, improve your knowledge, and grow with our courses.</p>
+            <button onclick="location.href='#courses'">Explore Courses</button>
+        </div>
+
+        <div class="hero-caption">
+            <h1>Master Programming</h1>
+            <p>Jump into JavaScript, Python, and full-stack development.</p>
+            <button onclick="location.href='#courses'">Start Coding</button>
+        </div>
+
+        <div class="hero-caption">
+            <h1>Learn Anytime</h1>
+            <p>Flexible online learning built for your lifestyle.</p>
+            <button onclick="location.href='#courses'">See Courses</button>
+        </div>
+
+        <!-- Slide Controls -->
+        <button class="slider-btn prev" aria-label="Previous slide">&#10094;</button>
+        <button class="slider-btn next" aria-label="Next slide">&#10095;</button>
+
+        <!-- Slide Indicators -->
+        <div class="slider-dots">
+            <span class="dot active" aria-label="Slide 1"></span>
+            <span class="dot" aria-label="Slide 2"></span>
+            <span class="dot" aria-label="Slide 3"></span>
+        </div>
+    </section>
+
+    <!-- ===== VALUE PROPOSITION SECTION ===== -->
+    <section class="value-prop">
+        <div class="prop">
+            <img src="https://img.icons8.com/ios-filled/64/007bff/teacher.png" alt="Expert Instructors" />
+            <h3>Expert Instructors</h3>
+            <p>Learn from industry professionals with real experience.</p>
+        </div>
+        <div class="prop">
+            <img src="https://img.icons8.com/ios-filled/64/007bff/clock.png" alt="Flexible Learning" />
+            <h3>Flexible Learning</h3>
+            <p>Access courses anytime, anywhere on any device.</p>
+        </div>
+        <div class="prop">
+            <img src="https://img.icons8.com/ios-filled/64/007bff/certificate.png" alt="Certification" />
+            <h3>Certification</h3>
+            <p>Earn recognized certificates to boost your career.</p>
+        </div>
+    </section>
+
+    <!-- ===== FEATURED COURSES SECTION ===== -->
+    <section id="courses" class="featured-courses">
+        <h2>Featured Courses</h2>
+        <div class="courses-grid">
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=400&q=80"
+                    alt="JavaScript Basics" />
+                <h3>JavaScript Basics</h3>
+                <p>Get started with JavaScript and learn fundamentals of web programming.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=400&q=80"
+                    alt="Python for Beginners" />
+                <h3>Python for Beginners</h3>
+                <p>Explore Python programming and build real-world projects.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=400&q=80"
+                    alt="Full-stack Development" />
+                <h3>Full-stack Development</h3>
+                <p>Become a full-stack developer and build end-to-end web applications.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80"
+                    alt="Data Science" />
+                <h3>Data Science</h3>
+                <p>Analyze data and uncover insights with powerful tools and techniques.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER SECTION ===== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@kosovaacademy.com</p>
+                <p>Phone: +383 44 123 456</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <form class="newsletter-form" onsubmit="return false;">
+                    <input type="email" placeholder="Your email" aria-label="Your email" required />
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 KosovaAcademy. All rights reserved.</p>
+    </footer>
+
+    <!-- ===== HERO SLIDER JAVASCRIPT ===== -->
+    <script>
+        // Slider Elements
+        const slides = document.querySelectorAll('.hero-slide');
+        const captions = document.querySelectorAll('.hero-caption');
+        const dots = document.querySelectorAll('.dot');
+        const prevBtn = document.querySelector('.slider-btn.prev');
+        const nextBtn = document.querySelector('.slider-btn.next');
+
+        let currentIndex = 0;
+        let slideInterval;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+                captions[i].classList.toggle('active', i === index);
+                dots[i].classList.toggle('active', i === index);
+            });
+            currentIndex = index;
+        }
+
+        function nextSlide() {
+            showSlide((currentIndex + 1) % slides.length);
+        }
+
+        function prevSlide() {
+            showSlide((currentIndex - 1 + slides.length) % slides.length);
+        }
+
+        function startSlideShow() {
+            slideInterval = setInterval(nextSlide, 5000);
+        }
+
+        function stopSlideShow() {
+            clearInterval(slideInterval);
+        }
+
+        // Event Listeners
+        nextBtn.addEventListener('click', () => {
+            stopSlideShow();
+            nextSlide();
+            startSlideShow();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            stopSlideShow();
+            prevSlide();
+            startSlideShow();
+        });
+
+        dots.forEach((dot, idx) => {
+            dot.addEventListener('click', () => {
+                stopSlideShow();
+                showSlide(idx);
+                startSlideShow();
+            });
+        });
+
+        document.querySelector('.hero-slider').addEventListener('mouseenter', stopSlideShow);
+        document.querySelector('.hero-slider').addEventListener('mouseleave', startSlideShow);
+
+        startSlideShow();
+    </script>
+</body>
+
+</html>
