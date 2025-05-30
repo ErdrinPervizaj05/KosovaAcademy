@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KosovaAcademy - Forgot Password</title>
+    <link rel="stylesheet" href="UserForm.css" />
+</head>
+
+<body>
+
+    <div class="login-wrapper">
+        <form action="/forgot_password_action.php" method="post" class="login-form">
+            <div class="imgcontainer">
+                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar" />
+            </div>
+
+            <div class="container">
+                <h2 style="color:#004aad; text-align:center; margin-bottom: 20px;">Forgot Your Password?</h2>
+
+                <label for="email"><b>Enter Your Registered Email</b></label>
+                <input type="email" placeholder="Enter Email Address" name="email" id="email" required />
+
+                <button type="submit" class="submit-btn">Send Reset Link</button>
+            </div>
+
+            <div class="container cancel-container">
+                <button type="button" class="cancelbtn" onclick="window.location.href='login.html'">Back to
+                    Login</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

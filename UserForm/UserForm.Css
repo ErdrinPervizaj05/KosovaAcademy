@@ -1,0 +1,166 @@
+/* Reset and base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e6f0fa;
+    /* light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-wrapper {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 80, 200, 0.15);
+    width: 100%;
+    max-width: 420px;
+    padding: 32px 40px;
+    box-sizing: border-box;
+}
+
+form {
+    width: 100%;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+img.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #004aad;
+    box-shadow: 0 0 10px #004aad88;
+}
+
+label {
+    font-weight: 600;
+    color: #004aad;
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 16px;
+    font-size: 15px;
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+    width: 100%;
+    padding: 14px 18px;
+    margin-top: 4px;
+    border: 2px solid #a7c0f2;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus {
+    border-color: #004aad;
+    outline: none;
+    box-shadow: 0 0 6px #004aad88;
+}
+
+button.submit-btn {
+    background-color: #004aad;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 14px 0;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.submit-btn:hover {
+    background-color: #003580;
+}
+
+.cancelbtn {
+    background-color: #d32f2f;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cancelbtn:hover {
+    background-color: #b22222;
+}
+
+.cancel-container {
+    margin-top: 30px;
+    background-color: #e6f0fa;
+    border-radius: 10px;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span.psw {
+    font-size: 14px;
+    color: #004aad;
+}
+
+span.psw a {
+    color: #003580;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+span.psw a:hover {
+    text-decoration: underline;
+}
+
+/* Remember me checkbox styling */
+label.remember-me {
+    font-weight: 500;
+    font-size: 14px;
+    color: #004aad;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+/* Responsive for small devices */
+@media screen and (max-width: 420px) {
+    .login-wrapper {
+        margin: 16px;
+        padding: 24px 24px;
+    }
+
+    .cancel-container {
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px;
+    }
+
+    span.psw {
+        text-align: center;
+        width: 100%;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+}

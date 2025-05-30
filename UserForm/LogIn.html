@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KosovaAcademy Login</title>
+    <link rel="stylesheet" href="UserForm.css" />
+</head>
+
+<body>
+
+    <div class="login-wrapper">
+        <form action="/action_page.php" method="post" class="login-form">
+            <div class="imgcontainer">
+                <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar" />
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" id="uname" required />
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw" required />
+
+                <!-- Updated class here -->
+                <button type="submit" class="submit-btn">Log In</button>
+
+                <label class="remember-me">
+                    <input type="checkbox" checked="checked" name="remember" />
+                    Remember me
+                </label>
+            </div>
+
+            <div class="container cancel-container">
+                <button type="button" class="cancelbtn"><a href="/Front-End Development/KosovaAcademy/index.html">Cancel</a></button>
+                <span class="psw">Forgot <a href="forgotpw.html">password?</a></span>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

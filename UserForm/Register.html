@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KosovaAcademy Register</title>
+    <link rel="stylesheet" href="UserForm.css" />
+</head>
+
+<body>
+
+    <div class="login-wrapper">
+        <form action="/register_action.php" method="post" class="login-form">
+            <div class="imgcontainer">
+                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar" />
+            </div>
+
+            <div class="container">
+                <label for="fname"><b>First Name</b></label>
+                <input type="text" placeholder="Enter First Name" name="fname" id="fname" required />
+
+                <label for="lname"><b>Last Name</b></label>
+                <input type="text" placeholder="Enter Last Name" name="lname" id="lname" required />
+
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="email" id="email" required />
+
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Choose Username" name="uname" id="uname" required />
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Create Password" name="psw" id="psw" required minlength="6" />
+
+                <label for="psw-repeat"><b>Confirm Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required
+                    minlength="6" />
+
+                <button type="submit" class="submit-btn">Register Now</button>
+            </div>
+
+            <div class="container cancel-container">
+                <button type="button" class="cancelbtn"><a href="/Front-End Development/KosovaAcademy/index.html">Cancel</a></button>
+                <span class="psw">
+                    Already have an account? <a href="login.html">Log In</a>
+                </span>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
